@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Play with long shadow</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <style>
+    body {
+        margin-top: 60px;
+        background:url(img/web-bg.jpg);
+    }
+    .nav-alert {
+        color:#ff5555;
+        margin-left:10px;
+    }
+    .item {
+        position:relative;
+        width:256px;
+        height:256px;
+        display:inline-block;
+    }
+    .item .bg{
+        background:#222222;
+        border-radius:10px;
+        width:210px;
+        height:210px;
+        top:18px;
+        left:18px;
+        position:absolute;
+        z-index:1;
+    }
+    .item img {
+        z-index:2;
+        position:absolute;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://github.com/billynyh"><i class="icon-github"></i> billynyh</a>
+        </div>
+
+        <form class="navbar-form navbar-left" id="add-color-form">
+            <div class="form-group">
+                <input id="add-color-input" type="text" class="form-control" placeholder="add color (#eaeaea)">
+            </div>
+            <button type="submit" class="btn btn-default">Add</button>
+            <span class="nav-alert" id="alert-area"></span>
+        </form>
+
+      </div><!-- /.container -->
+    </nav>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-12" id="data-container">
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    function isValidColor(color) {
+        if (color.length == 7 && color[0] =="#") {
+            for (var i=1;i<7;i++) {
+                var ok = false;
+                if (color[i] >= '0' && color[i]<='9') ok = true;
+                if (color[i] >= 'a' && color[i]<='f') ok = true;
+                if (color[i] >= 'A' && color[i]<='F') ok = true;
+                if (!ok) return false;
+            }
+            return true;
+        }
+        return false;
+    }
+    function genIcons(container, color, logos) {
+        var group = $("<div style=\"display:inline-block\"></div>");
+        for (var i = 0, n = logos.length; i < n; i++) {
+            var ele = $("<span></span>"); //.addClass("col-lg-4");
+            ele.append("<div class=\"item\"><div class=\"bg\" style=\"background:"+color+"\"></div><img src=\""+logos[i]+"\" class=\"\"></div>");
+            group.append(ele);
+        }
+        container.append(group);
+    }
+    function showError(s) {
+        var ele = $("#alert-area").text(s).show();
+        var fadeOut = function() {
+            clearTimeout(timeout);
+            ele.fadeOut('slow');
+        };
+        var timeout = setTimeout(fadeOut, 5000);
+    }
+
+    var LOGOS = ["img/logo-1.png", "img/logo-2.png", "img/logo-3.png"];
+    var COLORS = ["#222222", "#206080", "#802060", "#0FA673"];
+    var container = $("#data-container");
+
+    // init
+    for (var i = 0, n = COLORS.length; i < n; i++) {
+        genIcons(container, COLORS[i], LOGOS);
+    }
+    $("#alert-area").hide();
+
+    // add event
+    $("#add-color-form").submit(function(){
+        var color = $("#add-color-input").val();
+        if (color[0] != "#") color = "#" + color;
+        if (isValidColor(color)) {
+            genIcons(container, color, LOGOS);
+        } else {
+            showError("invalid color");
+        }
+        return false;
+    });
+
+});
+    </script>
+  </body>
+</html>

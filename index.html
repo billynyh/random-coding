@@ -109,12 +109,34 @@ $(document).ready(function(){
         };
         var timeout = setTimeout(fadeOut, 5000);
     }
+    function updateUrl(colors) {
+        url = "?c=" + colors.join(",");
+        history.pushState(null, null, url);
+    }
+    function findInArray(a, item) {
+        for (var i=0, n=a.length; i <n;i++) {
+            //console.log(a[i] + " " + item + " " + (a[i]==item));
+            if (a[i] == item) return true;
+        }
+        return false;
+    }
 
     var LOGOS = ["img/logo-1.png", "img/logo-2.png", "img/logo-3.png"];
     var COLORS = ["#222222", "#206080", "#802060", "#0FA673"];
     var container = $("#data-container");
 
     // init
+    var url = window.location.href;
+    var qs = url.slice(url.indexOf('?') + 1).split('&');
+    for (var i=0,n=qs.length; i<n; i++) {
+        var a = qs[i].split("=");
+        if (a.length == 2) {
+            if (a[0] == "c") {
+                COLORS = a[1].split(",");
+            }       
+        }
+    }
+
     for (var i = 0, n = COLORS.length; i < n; i++) {
         genIcons(container, COLORS[i], LOGOS);
     }
@@ -124,11 +146,15 @@ $(document).ready(function(){
     $("#add-color-form").submit(function(){
         var color = $("#add-color-input").val();
         if (color[0] != "#") color = "#" + color;
-        if (isValidColor(color)) {
+        if (findInArray(COLORS, color) ){
+            showError("duplicated color");
+        } else if (isValidColor(color)) {
+            COLORS.push(color);
             genIcons(container, color, LOGOS);
         } else {
             showError("invalid color");
         }
+        updateUrl(COLORS);
         return false;
     });
 

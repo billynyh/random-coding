@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 
 {% block header %}
+<div class="inset">
     <h2>{{ entry.title }}</h2>
     <p>{{ entry.pretty_date }}</p>
+</div>
 {% endblock %}
 
 {% block main %}
+<div class="inset">
     {{ entry.content }}
+</div>
 {% endblock %}

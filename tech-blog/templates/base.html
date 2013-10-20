@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Billy's tech blog</title>
+
+    <!-- Bootstrap core CSS -->
+    {{h.css_tag("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css")}}
+    {{h.css_tag("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css")}}
+
+    <!-- Add custom CSS here -->
+    {{h.css_asset_tag(base_url, "simple-sidebar.css")}}
+    {{h.css_asset_tag(base_url, "global.css")}}
+
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      {% include '_sidebar.html' %}
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+                {% block body %}
+                    <div id="header">
+                        {% block header %}{% endblock %}
+                    </div>
+
+                    <div id="main">
+                        {% block main %}{% endblock %}
+                    </div>
+
+                    <div id="footer">
+                        {% block footer %}{% endblock %}
+                    </div>
+                {% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {{h.js_asset_tag(base_url, "jquery.js")}}
+    {{h.js_asset_tag(base_url, "bootstrap.js")}}
+    {{h.js_asset_tag(base_url, "sticky-title.js")}}
+    {{h.js_asset_tag(base_url, "global.js")}}
+    {% block extra_js %}{% endblock %}
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>

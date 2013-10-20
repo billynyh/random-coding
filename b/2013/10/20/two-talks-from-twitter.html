@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Billy's tech blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="../../../static/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../../../static/css/global.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"><a href="http://github.com/billynyh">billynyh</a></li>
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../../../archives.html">Archive</a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+                
+                    <div id="header">
+                        
+<div class="inset">
+    <h2>Two tech talks from Twitter Android team
+</h2>
+    <p>October 20, 2013</p>
+</div>
+
+                    </div>
+
+                    <div id="main">
+                        
+<div class="inset">
+    <p>Watched two Android talks from Twitter today, one is about gradle and one about Vine.</p>
+
+<h3>Building Twitter for Android with Gradle</h3>
+<p>(by Jonathan Le - https://twitter.com/jle)</p>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/EM5edIJUA10" frameborder="0" allowfullscreen></iframe>
+
+<p>The gradle one was short, mostly about the migration process of twitter Android team.
+Some interesting points from the talk:</p>
+
+<h4>Twitter app version</h4>
+<ul>
+<li>1.0: 1 committers, Ant, build time 30s</li>
+<li>4.0: 15 committers, Ant+Ivy, build time 2min</li>
+<li>5.0: 80 committers, Gradle, build time 24s</li>
+</ul>
+<h4>Gradle process</h4>
+<ul>
+<li>setup private Sonatype Nexus repo</li>
+<li>publish aars to nexus</li>
+</ul>
+<h4>Should not use git submodules</h4>
+<ul>
+<li>The talk did not include more detail of this...</li>
+</ul>
+<h3>Building Vine on Android</h3>
+<p>(by Sara Haider - https://twitter.com/pandemona)</p>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/7zamwc2lXhg" frameborder="0" allowfullscreen></iframe>
+
+<p>Finally have time to watch the whole video, very nice talk, included many technical tricks of building vine app. Some tricks remind me the time I was working on ActionSnap.</p>
+
+<h4>Playback tricks</h4>
+<ul>
+<li>Use MediaPlayer, TextureView(api 14) to play the video</li>
+<li>Autoplay, prefetch 2 videos</li>
+<li>MediaPlay.setLooping(true) is too slow. Early seek to improve the loop behavior</li>
+</ul>
+<h4>Recording</h4>
+<ul>
+<li>MediaRecorder has 700ms delay on start,stop</li>
+<li>use PreviewFrame to get images and record audio (wat?)</li>
+<li>need compare timestamp to synchronize audio/video</li>
+<li>use ~140MB memory for full 6 second cut</li>
+<li>largeHeap = true (of coz)</li>
+<li>separate process to get more memory</li>
+</ul>
+<h4>Cusor</h4>
+<ul>
+<li>hybrid cursor</li>
+<li>backed by ArrayList (?)</li>
+<li>update list view and write to db in the bg</li>
+</ul>
+<h4>Crash tracking</h4>
+<ul>
+<li>Crashlytics</li>
+<li>real time, tonnes of metadata</li>
+<li><b>zero unknown crashes #adore#</b></li>
+</ul>
+<h4>Span</h4>
+<ul>
+<li>bug on emoji</li>
+</ul>
+<h4>The f-word - fragmentation</h4>
+<ul>
+<li>Device specific hack<ul>
+<li>samsung s4 front facing camera strange aspect ratios</li>
+<li>htc not support multiple MediaPlayers at once</li>
+<li>Kindle (dumb)</li>
+</ul>
+</li>
+<li>Default camera not always back camera</li>
+</ul>
+</div>
+
+                    </div>
+
+                    <div id="footer">
+                        
+                    </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../static/js/jquery.js"></script>
+    <script src="../../../static/js/bootstrap.js"></script>
+    <script src="../../../static/js/sticky-title.js"></script>
+    <script src="../../../static/js/global.js"></script>
+    
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>

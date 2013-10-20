@@ -12,7 +12,7 @@ import helper
 
 #Settings
 SOURCE = "./posts/" #end with slash
-DESTINATION = "./gen/" #end with slash
+DESTINATION = "../b/" #end with slash
 HOME_SHOW = 15 #numer of entries to show on homepage
 TEMPLATE_PATH = "./templates/"
 TEMPLATE_OPTIONS = {}

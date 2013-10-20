@@ -9,11 +9,11 @@
     <title>Billy's tech blog</title>
 
     <!-- Bootstrap core CSS -->
-    {{h.css_asset_tag(base_url, "bootstrap.css")}}
+    {{h.css_tag("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css")}}
+    {{h.css_tag("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css")}}
 
     <!-- Add custom CSS here -->
     {{h.css_asset_tag(base_url, "simple-sidebar.css")}}
-    {{h.css_asset_tag(base_url, "font-awesome/css/font-awesome.min.css")}}
     {{h.css_asset_tag(base_url, "global.css")}}
 
     {% block extra_css %}{% endblock %}
@@ -26,14 +26,8 @@
           
       <!-- Page content -->
       <div id="page-content-wrapper">
-        <div class="content-header">
-          <h1>
-            <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            Billy's development notes
-          </h1>
-        </div>
         <!-- Keep all page content within the page-content inset div! -->
-        <div class="page-content inset">
+        <div class="page-content container-fluid">
           <div class="row">
             <div class="col-md-12">
                 {% block body %}
@@ -60,6 +54,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     {{h.js_asset_tag(base_url, "jquery.js")}}
     {{h.js_asset_tag(base_url, "bootstrap.js")}}
+    {{h.js_asset_tag(base_url, "sticky-title.js")}}
     {{h.js_asset_tag(base_url, "global.js")}}
     {% block extra_js %}{% endblock %}
     <!-- Put this into a custom JavaScript file to make things more organized -->

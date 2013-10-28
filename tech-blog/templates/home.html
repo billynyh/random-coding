@@ -25,7 +25,7 @@
         <div class="post-description">
         {{ entry.content }}
         </div>
-            <p class="permalink"><a href="/{{ entry.url}}">#permalink</a></p>
+            <p class="permalink"><a href="{{ h.url(base_url, entry.url)}}">#permalink</a></p>
         </div>
     
     </section>

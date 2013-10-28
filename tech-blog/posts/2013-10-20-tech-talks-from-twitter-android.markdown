@@ -4,6 +4,7 @@ slug:two-talks-from-twitter
 author:billynyh
 tag:android, twitter
 
+
 <p>Watched two Android talks from Twitter today, one is about gradle and one about Vine.</p>
 
 ### Building Twitter for Android with Gradle 

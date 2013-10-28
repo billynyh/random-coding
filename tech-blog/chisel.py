@@ -48,6 +48,7 @@ def get_tree(source):
             title = f.readline()
             date = time.strptime(f.readline().strip(), ENTRY_TIME_FORMAT)
             year, month, day = date[:3]
+            tags = []
 
             slug = os.path.splitext(name)[0]
             author = ""
@@ -57,11 +58,13 @@ def get_tree(source):
                 if s.strip() == "":
                     break
                 a = s.split(":")
+                a[0] = a[0].strip()
                 if a[0] == "slug":
                     slug = a[1].strip()
                 elif a[0] == "author":
                     author = a[1].strip()
-
+                elif a[0] == "tag" or a[0] == "tags":
+                    tags = [x.strip() for x in a[1].split(",")]
             files.append({
                 'title': title,
                 'epoch': time.mktime(date),
@@ -74,7 +77,8 @@ def get_tree(source):
                 'day': day,
                 'filename': name,
                 'slug' : slug, # added by billynyh
-                'author': author # added by billynyh
+                'author': author, # added by billynyh
+                'tags' : tags,
             })
             f.close()
     return files

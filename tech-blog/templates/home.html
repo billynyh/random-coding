@@ -16,8 +16,9 @@
             <p class="post-meta">
                 By <a href="#" class="post-author">{{entry.author}}</a> 
                 under 
-                <a class="post-category post-category-design" href="#">CSS</a> 
-                <a class="post-category post-category-pure" href="#">Pure</a>
+                {% for tag in entry.tags %}
+                <a class="post-category post-category-{{tag}}" href="#">{{tag}}</a> 
+                {% endfor %}
             </p>
         </header>
 

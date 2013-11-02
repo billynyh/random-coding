@@ -22,6 +22,18 @@ Here are some apps that I think they are in a good direction of expanding the de
 
 I like the way they put the tab in actionbar and combined with the app logo. You can say it does not follow the design guideline, but in my opinion, it works better, and as long as the style consistent with the Holo theme, I would say it is a good design. However, I don't like they put the second level tab in the bottom, may be they can try using other style of indicator.
 
+[[media:20131030/dropbox.jpg]]
+
+### Flickr
+
+Another UI I want to talk about is the slide up panel. I dont see many people discussing it, is it not popular? Not really. Google plus and Flickr are using it already. Comparing to navigate to another view, using gesture to drag out another view sometimes gives better user experience, you dont lose your current view and you have a chance to abort the action (slide out a little bit and close it back).
+
+[[media:20131030/flickr-1.jpg,20131030/flickr-2.jpg,20131030/flickr-3.jpg]]
+
+While I write this article, I found that there is a new "Photo" app from Google in my application list, what supprised me is, the new share dialog. Beside the share dialog and action bar share provider, Google created a new share interface with the slide up panel. I like it.
+
+
+[[media:20131030/gphoto-1.jpg,20131030/gphoto-2.jpg,20131030/gphoto-3.jpg]]
 
 ### (Google) Play Music
 
@@ -29,19 +41,23 @@ The fading action bar is very impressive and definitely will be a trend. In the 
 
 And beside fading, [blur effect](http://nicolaspomepuy.fr/?p=18) is also coming. I think it is still quite computation heavy in some lower end device, but it should not stop you using it :p
 
-### Flickr
-
-One more UI I want to talk about, the slide up panel. I dont see many people discussing it, is it not popular? Not really, Google plus and Flickr are using it already. Comparing to navigate to another view, using gesture to drag out another view sometimes gives better user experience, since you dont lose your current view and you have a chance to abort the action (slide out a little bit and close it back).
-
-While I write this article, I found that there is a new "Photo" app from Google in my application list, what supprised me is, the new share dialog. Beside the share dialog and action bar share provider, Google created a new share interface with the slide up panel. I like it.
+[[media:20131030/gmusic-1.jpg,20131030/gmusic-2.jpg,20131030/gmusic-3.jpg, 20131030/gmusic-4.jpg,20131030/gmusic-5.jpg,20131030/gmusic-6.jpg]]
 
 
 ## Keep changing
 
-Design guideline will keep changing, developer should not afraid to use UI that is not in design guideline, as long as it is good, it will be in the guideline. 
+Design guideline will keep changing. Limiting yourself in the guideline does not mean your app is good, 
+sometime you need to study your users and expand the guideline yourself.
+Developer/designer should not be afraid to use UI that is not in design guideline, as long as it is good, it will be in the guideline. 
 
 ### Futher reading
 
 * [New in Android(KitKat)](http://developer.android.com/design/patterns/new.html)
 * [Google's Android Apps Look Boring - And It's a Good Thing](http://www.androiduipatterns.com/2013/09/googles-android-apps-look-boring-and.html)
-* [Four Android App Design Guidelines You Should Break](http://www.fastcolabs.com/3012752/four-android-app-design-guidelines-you-should-break) (I dont agree on some of his points, may write another post on this)
+* [Four Android App Design Guidelines You Should Break](http://www.fastcolabs.com/3012752/four-android-app-design-guidelines-you-should-break) 
+    * (I dont agree on some of his points, may write another post on this)
+* <https://github.com/ManuelPeinado/FadingActionBar>
+* <https://github.com/ManuelPeinado/GlassActionBar>
+* <https://github.com/umano/AndroidSlidingUpPanel>
+
+

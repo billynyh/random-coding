@@ -41,3 +41,11 @@ body {
 .media-group .media {
     padding-right:4px;
 }
+
+/* tag */
+.post-category.post-category-android {
+    background-color:#248a46;
+}
+.post-category.post-category-ui {
+    background-color:#8a0042;
+}

@@ -46,6 +46,21 @@ a:focus {
     color: #efefef;
 }
 
+.brand-title a {
+    color: #ffffff;
+}
+
+.sidebar .social a {
+    color: #ffffff;
+    font-size:36px;
+    padding:4px;
+}
+.sidebar .social a:hover {
+    color: #eaeaea;
+}
+
+
+
 .nav-list {
     margin: 0;
     padding: 0;

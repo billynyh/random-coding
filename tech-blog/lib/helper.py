@@ -41,4 +41,5 @@ def _extract_query(url, key):
     return ""
     
 
-
+def string2cls(s):
+    return "".join(s.split(" ")).lower()

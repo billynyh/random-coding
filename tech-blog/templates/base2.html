@@ -8,6 +8,7 @@
     <title>{% block title %}Billy's tech blog{% endblock %}</title>
     
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css" rel="stylesheet">
 
     {{h.css_asset_tag(base_url, "global.css")}}
     {{h.css_asset_tag(base_url, "blog.css")}}
@@ -26,8 +27,13 @@
     <div class="sidebar pure-u">
         <header class="header">
             <hgroup>
-                <h1 class="brand-title">Billynyh's blog</h1>
+                <h1 class="brand-title"><a href="{{base_url}}">Billynyh's blog</a></h1>
                 <h2 class="brand-tagline">Just some development notes</h2>
+                <p class="social">
+                    <a href="http://github.com/billynyh"><i class="fa fa-github-square"></i></a>
+                    <a href="http://twitter.com/billynyh"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://plus.google.com/105980838674582844427"><i class="fa fa-google-plus-square"></i></a>
+                </p>
             </hgroup>
         </header>
 

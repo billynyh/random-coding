@@ -8,11 +8,13 @@
 
 import sys, re, time, os, codecs
 import jinja2, markdown
-import helper
+from lib import helper
+from lib.md_extension import MediaExtension
 
 #Settings
 SOURCE = "./posts/" #end with slash
 DESTINATION = "../b/" #end with slash
+MEDIA_PATH = "http://localhost/~billy/random-coding/b/media"
 HOME_SHOW = 15 #numer of entries to show on homepage
 TEMPLATE_PATH = "./templates/"
 TEMPLATE_OPTIONS = {}
@@ -25,8 +27,12 @@ TIME_FORMAT = "%B %d, %Y"
 ENTRY_TIME_FORMAT = "%Y-%m-%d"
 #FORMAT should be a callable that takes in text
 #and returns formatted text
-FORMAT = lambda text: markdown.markdown(text, ['footnotes',]) 
+
+MEDIA_EXT = MediaExtension(MEDIA_PATH)
+FORMAT = lambda text: markdown.markdown(text, ['footnotes', MEDIA_EXT]) 
 #########
+
+
 
 STEPS = []
 

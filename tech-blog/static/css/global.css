@@ -1,24 +1,43 @@
 body {
     background:url(../images/gplaypattern.png);
 }
+
+.tags {
+    display:none;
+}
+
 .sticky {
     width:100%;
     overflow:hidden;
     border-bottom: solid 1px #cacaca;
     position: relative;
     z-index: 1;
-    background: rgba(220,220,220,0.8);
+    background: rgba(246,246,246,0.8);
     font-size:24px;
     padding:10px 15px;
+    font-weight:bold;
 }
 .sticky.fixed {
     position: fixed;
     top: 0;
-    left:250px;
 
     z-index: 0;
 }
 .sticky.fixed.absolute {
-    position: absolute;
+    position:absolute;
     left:0;
+}
+.followWrap {
+    position:relative;
+}
+
+/* Media */
+
+.media-group {
+    white-space: nowrap;
+    overflow:auto;
+}
+
+.media-group .media {
+    padding-right:4px;
 }

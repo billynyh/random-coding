@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Billy's tech blog">
 
-    <title>Billy's tech blog</title>
+    <title>{% block title %}Billy's tech blog{% endblock %}</title>
     
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 
-    <link href="./static/css/global.css" rel="stylesheet">
-    <link href="./static/css/blog.css" rel="stylesheet">
+    {{h.css_asset_tag(base_url, "global.css")}}
+    {{h.css_asset_tag(base_url, "blog.css")}}
 
-    
+    {% block extra_css %}{% endblock %}
     
 <script>
     try { Typekit.load(); } catch (e) {}
@@ -31,69 +31,35 @@
             </hgroup>
         </header>
 
-        
+        {% if post_tags %}
         <div class="tags">
-            
-                <a href="#">android</a>
-            
-                <a href="#">ui</a>
-            
-                <a href="#">twitter</a>
-            
+            {% for tag in post_tags %}
+                <a href="#">{{tag}}</a>
+            {% endfor %}
         </div>
-        
+        {% endif %}
 
-        
-        
+        {% block sidebar %}
+        {% endblock %}
     </div>
 
     <div class="pure-u-1">
         <!-- A wrapper for all the blog posts -->
         <div class="posts">
 
-            
+            {% block body %}
                 <div id="header">
-                    
-<div class="inset">
-    <h2>Archives</h2>
-</div>
-
+                    {% block header %}{% endblock %}
                 </div>
 
                 <div id="main">
-                    
-    
-    <div class="inset">
-        <h3>2013</h3>
-        <ul class="year_block">
-            
-            <li>
-                <h4>10</h4>
-                <ul class="month_block">
-                    
-                        
-                            <li><a href="./2013/10/30/how-i-see-design-guideline.html">How I see Android design guideline
-</a> -- <small>October 30, 2013</small></li>
-                        
-                    
-                        
-                            <li><a href="./2013/10/20/two-talks-from-twitter.html">Two tech talks from Twitter Android team
-</a> -- <small>October 20, 2013</small></li>
-                        
-                    
-                </ul>
-            </li>
-            
-        </ul>
-    </div>
-    
-
+                    {% block main %}{% endblock %}
                 </div>
 
                 <div id="footer">
-                    
+                    {% block footer %}{% endblock %}
                 </div>
-            
+            {% endblock %}
         </div>
 
         <footer class="footer">
@@ -107,11 +73,11 @@
     </div>
 </div>
 
-    <script src="./static/js/jquery.js"></script>
-    <script src="./static/js/bootstrap.js"></script>
-    <script src="./static/js/sticky-title.js"></script>
-    <script src="./static/js/global.js"></script>
-    
+    {{h.js_asset_tag(base_url, "jquery.js")}}
+    {{h.js_asset_tag(base_url, "bootstrap.js")}}
+    {{h.js_asset_tag(base_url, "sticky-title.js")}}
+    {{h.js_asset_tag(base_url, "global.js")}}
+    {% block extra_js %}{% endblock %}
 <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
 <script>
 YUI().use('node-base', 'node-event-delegate', function (Y) {

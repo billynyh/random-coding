@@ -2,6 +2,7 @@ Two tech talks from Twitter Android team
 2013-10-20
 slug:two-talks-from-twitter
 author:billynyh
+tag:android, twitter
 
 
 <p>Watched two Android talks from Twitter today, one is about gradle and one about Vine.</p>

@@ -1,18 +1,32 @@
-{% extends "base.html" %}
-
+{% extends "base2.html" %}
 {% block main %}
     {% for entry in entries %}
-        <div class="entry">
-            <div class="sticky">
-            {{ entry.pretty_date }}
-            </div>
-            <div class="entry-container inset">
-            <h2 class=""><a href="{{ h.url(base_url, entry.url) }}">{{ entry.title }}</a></h2>
-            <div class="entry-content">
-                {{ entry.content }}
-            </div>
-            <p class="permalink"><a href="/{{ entry.url}}">#permalink</a></p>
-            </div>
+    <section class="post">
+        <div class="sticky">
+            <a href="{{ h.url(base_url, entry.url) }}">{{ entry.pretty_date }}</a>
         </div>
+        <div class="content">
+        <header class="post-header">
+
+            <h2 class="post-title">
+                <a href="{{ h.url(base_url, entry.url) }}">{{ entry.title }}</a>
+            </h2>
+
+            <p class="post-meta">
+                By <a href="#" class="post-author">{{entry.author}}</a> 
+                under 
+                {% for tag in entry.tags %}
+                <a class="post-category post-category-{{tag}}" href="#">{{tag}}</a> 
+                {% endfor %}
+            </p>
+        </header>
+
+        <div class="post-description">
+        {{ entry.content }}
+        </div>
+
+        </div>
+    
+    </section>
     {% endfor %}
 {% endblock %}

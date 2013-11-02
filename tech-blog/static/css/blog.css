@@ -10,7 +10,7 @@ a {
 }
 a:hover,
 a:focus {
-    text-decoration: underline;
+    color: #2E4B00;
 }
 
 /* LAYOUT CSS */
@@ -81,6 +81,7 @@ a:focus {
 
 .content {
     padding: 0 3em 0;
+    width:70%;
 }
 
 .post {

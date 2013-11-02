@@ -1,14 +1,33 @@
 {% extends "base2.html" %}
 
-{% block header %}
-<div class="inset">
-    <h2>{{ entry.title }}</h2>
-    <p>{{ entry.pretty_date }}</p>
-</div>
-{% endblock %}
-
+{% block title %} {{entry.title}}  {% endblock %}
 {% block main %}
-<div class="inset">
-    {{ entry.content }}
-</div>
+
+<section class="post">
+    <div class="sticky">
+        {{entry.pretty_date}}
+    </div>
+    <div class="content">
+    <header class="post-header">
+
+        <h2 class="post-title">
+            {{ entry.title }}
+        </h2>
+
+        <p class="post-meta">
+            By <a href="#" class="post-author">{{entry.author}}</a> 
+            under 
+            {% for tag in entry.tags %}
+            <a class="post-category post-category-{{tag}}" href="#">{{tag}}</a> 
+            {% endfor %}
+        </p>
+    </header>
+
+    <div class="post-description">
+        {{ entry.content }}
+    </div>
+
+
+    </div>
+</section>
 {% endblock %}

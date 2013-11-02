@@ -1,6 +1,11 @@
 body {
     background:url(../images/gplaypattern.png);
 }
+
+.tags {
+    display:none;
+}
+
 .sticky {
     width:100%;
     overflow:hidden;
@@ -10,6 +15,7 @@ body {
     background: rgba(246,246,246,0.8);
     font-size:24px;
     padding:10px 15px;
+    font-weight:bold;
 }
 .sticky.fixed {
     position: fixed;
@@ -18,7 +24,9 @@ body {
     z-index: 0;
 }
 .sticky.fixed.absolute {
-    position: absolute;
+    position:absolute;
     left:0;
 }
-
+.followWrap {
+    position:relative;
+}

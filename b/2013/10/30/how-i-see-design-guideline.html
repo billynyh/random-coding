@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Billy's tech blog">
 
-    <title>Billy's tech blog</title>
+    <title> How I see Android design guideline
+  </title>
     
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 
-    <link href="./static/css/global.css" rel="stylesheet">
-    <link href="./static/css/blog.css" rel="stylesheet">
+    <link href="../../../static/css/global.css" rel="stylesheet">
+    <link href="../../../static/css/blog.css" rel="stylesheet">
 
     
     
@@ -58,31 +59,31 @@
 
                 <div id="main">
                     
-    
-    <section class="post">
-        <div class="sticky">
-            <a href="./2013/10/30/how-i-see-design-guideline.html">October 30, 2013</a>
-        </div>
-        <div class="content">
-        <header class="post-header">
 
-            <h2 class="post-title">
-                <a href="./2013/10/30/how-i-see-design-guideline.html">How I see Android design guideline
-</a>
-            </h2>
+<section class="post">
+    <div class="sticky">
+        October 30, 2013
+    </div>
+    <div class="content">
+    <header class="post-header">
 
-            <p class="post-meta">
-                By <a href="#" class="post-author">billynyh</a> 
-                under 
-                
-                <a class="post-category post-category-android" href="#">android</a> 
-                
-                <a class="post-category post-category-ui" href="#">ui</a> 
-                
-            </p>
-        </header>
+        <h2 class="post-title">
+            How I see Android design guideline
 
-        <div class="post-description">
+        </h2>
+
+        <p class="post-meta">
+            By <a href="#" class="post-author">billynyh</a> 
+            under 
+            
+            <a class="post-category post-category-android" href="#">android</a> 
+            
+            <a class="post-category post-category-ui" href="#">ui</a> 
+            
+        </p>
+    </header>
+
+    <div class="post-description">
         <p>To make a good Android app, the design is important for sure, but is following the design guideline enough? I am a developer not a designer, but still want to share some thoughts on current design guideline.</p>
 <h2>Current design guideline is not complete</h2>
 <p>Mobile app design changes very fast. To make the app stand out, people put lots of effort to stay on top of the design trends, they improve existing UI, and sometimes create new. And when the public accepted that design, it may become part of the design guideline. For example, navigation drawer (sliding menu) and pull to refresh. The drawer is now in the design guideline and is even supported in support library. Pull to refresh is still new but you can see that Google have their own twist and is using in gmail and google plus app.</p>
@@ -122,113 +123,11 @@ Developer/designer should not be afraid to use UI that is not in design guidelin
 <li><a href="https://github.com/ManuelPeinado/GlassActionBar">https://github.com/ManuelPeinado/GlassActionBar</a></li>
 <li><a href="https://github.com/umano/AndroidSlidingUpPanel">https://github.com/umano/AndroidSlidingUpPanel</a></li>
 </ul>
-        </div>
+    </div>
 
-        </div>
-    
-    </section>
-    
-    <section class="post">
-        <div class="sticky">
-            <a href="./2013/10/20/two-talks-from-twitter.html">October 20, 2013</a>
-        </div>
-        <div class="content">
-        <header class="post-header">
 
-            <h2 class="post-title">
-                <a href="./2013/10/20/two-talks-from-twitter.html">Two tech talks from Twitter Android team
-</a>
-            </h2>
-
-            <p class="post-meta">
-                By <a href="#" class="post-author">billynyh</a> 
-                under 
-                
-                <a class="post-category post-category-android" href="#">android</a> 
-                
-                <a class="post-category post-category-twitter" href="#">twitter</a> 
-                
-            </p>
-        </header>
-
-        <div class="post-description">
-        <p>Watched two Android talks from Twitter today, one is about gradle and one about Vine.</p>
-
-<h3>Building Twitter for Android with Gradle</h3>
-<p>(by Jonathan Le - https://twitter.com/jle)</p>
-<iframe width="420" height="315" src="http://www.youtube.com/embed/EM5edIJUA10" frameborder="0" allowfullscreen></iframe>
-
-<p>The gradle one was short, mostly about the migration process of twitter Android team.
-Some interesting points from the talk:</p>
-
-<h4>Twitter app version</h4>
-<ul>
-<li>1.0: 1 committers, Ant, build time 30s</li>
-<li>4.0: 15 committers, Ant+Ivy, build time 2min</li>
-<li>5.0: 80 committers, Gradle, build time 24s</li>
-</ul>
-<h4>Gradle process</h4>
-<ul>
-<li>setup private Sonatype Nexus repo</li>
-<li>publish aars to nexus</li>
-</ul>
-<h4>Should not use git submodules</h4>
-<ul>
-<li>The talk did not include more detail of this...</li>
-</ul>
-<h3>Building Vine on Android</h3>
-<p>(by Sara Haider - https://twitter.com/pandemona)</p>
-<iframe width="420" height="315" src="http://www.youtube.com/embed/7zamwc2lXhg" frameborder="0" allowfullscreen></iframe>
-
-<p>Finally have time to watch the whole video, very nice talk, included many technical tricks of building vine app. Some tricks remind me the time I was working on ActionSnap.</p>
-
-<h4>Playback tricks</h4>
-<ul>
-<li>Use MediaPlayer, TextureView(api 14) to play the video</li>
-<li>Autoplay, prefetch 2 videos</li>
-<li>MediaPlay.setLooping(true) is too slow. Early seek to improve the loop behavior</li>
-</ul>
-<h4>Recording</h4>
-<ul>
-<li>MediaRecorder has 700ms delay on start,stop</li>
-<li>use PreviewFrame to get images and record audio (wat?)</li>
-<li>need compare timestamp to synchronize audio/video</li>
-<li>use ~140MB memory for full 6 second cut</li>
-<li>largeHeap = true (of coz)</li>
-<li>separate process to get more memory</li>
-</ul>
-<h4>Cusor</h4>
-<ul>
-<li>hybrid cursor</li>
-<li>backed by ArrayList (?)</li>
-<li>update list view and write to db in the bg</li>
-</ul>
-<h4>Crash tracking</h4>
-<ul>
-<li>Crashlytics</li>
-<li>real time, tonnes of metadata</li>
-<li><b>zero unknown crashes #adore#</b></li>
-</ul>
-<h4>Span</h4>
-<ul>
-<li>bug on emoji</li>
-</ul>
-<h4>The f-word - fragmentation</h4>
-<ul>
-<li>Device specific hack<ul>
-<li>samsung s4 front facing camera strange aspect ratios</li>
-<li>htc not support multiple MediaPlayers at once</li>
-<li>Kindle (dumb)</li>
-</ul>
-</li>
-<li>Default camera not always back camera</li>
-</ul>
-        </div>
-
-        </div>
-    
-    </section>
-    
+    </div>
+</section>
 
                 </div>
 
@@ -249,10 +148,10 @@ Some interesting points from the talk:</p>
     </div>
 </div>
 
-    <script src="./static/js/jquery.js"></script>
-    <script src="./static/js/bootstrap.js"></script>
-    <script src="./static/js/sticky-title.js"></script>
-    <script src="./static/js/global.js"></script>
+    <script src="../../../static/js/jquery.js"></script>
+    <script src="../../../static/js/bootstrap.js"></script>
+    <script src="../../../static/js/sticky-title.js"></script>
+    <script src="../../../static/js/global.js"></script>
     
 <script src="http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"></script>
 <script>

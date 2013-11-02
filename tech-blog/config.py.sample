@@ -1,0 +1,3 @@
+DESTINATION = "../b/" #end with slash
+MEDIA_PATH = "http://billynyh.github.io/random-coding/b/"
+HOME_SHOW = 15 #numer of entries to show on homepage

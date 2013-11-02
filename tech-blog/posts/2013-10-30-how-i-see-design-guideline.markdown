@@ -25,9 +25,7 @@ I like the way they put the tab in actionbar and combined with the app logo. You
 
 ### (Google) Play Music
 
-The fading action bar is very impressive and definitely will be a trend. In the app, it has transparent action bar so you can see the whole image, and when you scroll down, it fade in to solid color to make the bars stand out. 
-
-For more detail, Cyril Mottier wrote a good [article](http://cyrilmottier.com/2013/05/24/pushing-the-actionbar-to-the-next-level/) on this.
+The fading action bar is very impressive and definitely will be a trend. In the app, it has transparent action bar so you can see the whole image, and when you scroll down, it fade in to solid color to make the bars stand out. For more detail, Cyril Mottier wrote a good [article](http://cyrilmottier.com/2013/05/24/pushing-the-actionbar-to-the-next-level/) on this.
 
 And beside fading, [blur effect](http://nicolaspomepuy.fr/?p=18) is also coming. I think it is still quite computation heavy in some lower end device, but it should not stop you using it :p
 
@@ -46,3 +44,4 @@ Design guideline will keep changing, developer should not afraid to use UI that 
 
 * [New in Android(KitKat)](http://developer.android.com/design/patterns/new.html)
 * [Google's Android Apps Look Boring - And It's a Good Thing](http://www.androiduipatterns.com/2013/09/googles-android-apps-look-boring-and.html)
+* [Four Android App Design Guidelines You Should Break](http://www.fastcolabs.com/3012752/four-android-app-design-guidelines-you-should-break) (I dont agree on some of his points, may write another post on this)

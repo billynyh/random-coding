@@ -30,3 +30,14 @@ body {
 .followWrap {
     position:relative;
 }
+
+/* Media */
+
+.media-group {
+    white-space: nowrap;
+    overflow:auto;
+}
+
+.media-group .media {
+    padding-right:4px;
+}

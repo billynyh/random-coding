@@ -6,11 +6,11 @@
 
 a {
     text-decoration: none;
-    color: #476400;
+    color: #1A6D99;
 }
 a:hover,
 a:focus {
-    color: #2E4B00;
+    color: #00537F;
 }
 
 /* LAYOUT CSS */
@@ -25,7 +25,7 @@ a:focus {
     bottom: 0;
     width: 25%;
     margin-left: -25%;
-    background: #262626;
+    background: #00537F;
     color: #fff;
 }
 
@@ -43,7 +43,7 @@ a:focus {
 }
 .brand-tagline {
     font-weight: 300;
-    color: #adca54;
+    color: #efefef;
 }
 
 .nav-list {
@@ -174,10 +174,14 @@ a:focus {
     #layout {
         padding: 0;
     }
+    .content {
+        width:100%;
+    }
 }
 
 @media (max-width: 480px) {
     .content {
         padding: 0 1em 0;
+        width:100%;
     }
 }

@@ -1,3 +1,6 @@
-DESTINATION = "../b/" #end with slash
-MEDIA_PATH = "http://billynyh.github.io/random-coding/b/"
+DESTINATION = "../../billynyh.github.io/" #end with slash
+ABS_PATH = "http://billynyh.github.io"
+
+
+MEDIA_PATH = ABS_PATH + "/media/"
 HOME_SHOW = 15 #numer of entries to show on homepage

@@ -49,3 +49,11 @@ body {
 .post-category.post-category-ui {
     background-color:#8a0042;
 }
+
+.fb-comments {
+    margin-top:40px;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]  {width: 100% !important;}

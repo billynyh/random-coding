@@ -2,6 +2,9 @@ body {
     background:url(../images/gplaypattern.png);
 }
 
+#main {
+    position:relative;
+}
 .tags {
     display:none;
 }
@@ -28,7 +31,6 @@ body {
     left:0;
 }
 .followWrap {
-    position:relative;
 }
 
 /* Media */

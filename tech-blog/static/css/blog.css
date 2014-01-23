@@ -159,6 +159,13 @@ a:focus {
     text-shadow: 0 1px 1px #333;
 }
 
+.post blockquote {
+    background:#eaeaea;
+    font-style: italic;
+    margin:0;
+    padding: 0 20px;
+}
+
 .footer {
     text-align: center;
     padding: 1em 0;

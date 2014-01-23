@@ -1,10 +1,10 @@
 {% extends "base2.html" %}
 {% block main %}
     {% for entry in entries %}
-    <section class="post">
         <div class="sticky">
             <a href="{{ h.url(base_url, entry.url) }}">{{ entry.pretty_date }}</a>
         </div>
+    <section class="post">
         <div class="content">
         <header class="post-header">
 

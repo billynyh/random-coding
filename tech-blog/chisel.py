@@ -48,6 +48,7 @@ def get_tree(source):
     for root, ds, fs in os.walk(source):
         for name in fs:
             if name[0] == ".": continue
+            print name
             path = os.path.join(root, name)
             f = open(path, "rU")
             title = f.readline()
@@ -102,6 +103,7 @@ def compare_entries(x, y):
     return result
 
 def write_file(url, data):
+    print "write_file " + url
     path = DESTINATION + url
     dirs = os.path.dirname(path)
     if not os.path.isdir(dirs):

@@ -10,7 +10,7 @@ tag:android
 * GTAC 2013 [presentations](https://developers.google.com/google-test-automation-conference/2013/presentations)
     * [How Facebook Tests Facebook on Android](https://www.youtube.com/watch?v=HUE_yrd8tl0)
 <iframe width="560" height="315" src="//www.youtube.com/embed/HUE_yrd8tl0" frameborder="0" allowfullscreen></iframe>
-<iframe src="https://docs.google.com/presentation/d/1cdSQhG7k2QI7GTObpFmUarMV84VI8-lE1ztRBajbhnY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="560" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    * [Slides](http://goo.gl/278b4)
 * Facebook: [mobile engi blog](https://code.facebook.com/mobile/), [github](https://github.com/facebook) 
     * [Building a faster Messenger](https://code.facebook.com/posts/454616284650560/building-a-faster-messenger/)
     >Michael Marucheck, had the idea to actually edit the Java byte code after compilation. We used ASM to improve our dependency injection system by detecting bindings that are safe to remove, adding static methods that instantiate a bound type, and rewriting calls to the injector to instead call the appropriate static method. By improving this process, we were able to have a well-crafted dependency injection system that lets us test at scale, but still with the 30% gain in speed.

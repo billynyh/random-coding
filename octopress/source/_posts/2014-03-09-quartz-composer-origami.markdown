@@ -3,7 +3,7 @@ layout: post
 title: "Try out Quartz Composer and Origami"
 date: 2014-03-09 19:59:11 +0800
 comments: true
-categories: 
+categories: [ux, prototyping]
 ---
 
 In late Jan, I watched a [talk - Bringing Beautiful Interactions to Android Apps](https://www.youtube.com/watch/?v=s5kNm-DgyjY) from Facebook about how they use Quartz Composer(QC) when developing Facebok Home (and chat head). Compare to other prototyping tools, QC can better illustrate animations and interactions. It is quite impressive and I actually installed QC the day after and tried to play on it. But when I first opened it, I was totally lost, not saying it is hard to use, but it is obvious that there is a learning curve on this tool. I did not spend more time on it that time but kept it in my TODO list.

@@ -23,21 +23,21 @@ Here are some apps that I think they are in a good direction of expanding the de
 
 I like the way they put the tab in actionbar and combined with the app logo. You can say it does not follow the design guideline, but in my opinion, it works better, and as long as the style consistent with the Holo theme, I would say it is a good design. However, I don't like they put the second level tab in the bottom, may be they can try using other style of indicator.
 
-{% img images/posts/20131030/dropbox.jpg %}
+<img src="{{root_url}}/images/posts/20131030/dropbox.jpg"/>
 
 ### Flickr
 
 Another UI I want to talk about is the slide up panel. I dont see many people discussing it, is it not popular? Not really. Google plus and Flickr are using it already. Comparing to navigate to another view, using gesture to drag out another view sometimes gives better user experience, you dont lose your current view and you have a chance to abort the action (slide out a little bit and close it back).
 
-{% img images/posts/20131030/flickr-1.jpg %}
-{% img images/posts/20131030/flickr-2.jpg %}
-{% img images/posts/20131030/flickr-3.jpg %}
+<img src="{{root_url}}/images/posts/20131030/flickr-1.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/flickr-2.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/flickr-3.jpg"/>
 
 While I write this article, I found that there is a new "Photo" app from Google in my application list, what supprised me is, the new share dialog. Beside the share dialog and action bar share provider, Google created a new share interface with the slide up panel. I like it.
 
-{% img images/posts/20131030/gphoto-1.jpg %}
-{% img images/posts/20131030/gphoto-2.jpg %}
-{% img images/posts/20131030/gphoto-3.jpg %}
+<img src="{{root_url}}/images/posts/20131030/gphoto-1.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gphoto-2.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gphoto-3.jpg"/>
 
 ### (Google) Play Music
 
@@ -45,13 +45,13 @@ The fading action bar is very impressive and definitely will be a trend. In the 
 
 And beside fading, [blur effect](http://nicolaspomepuy.fr/?p=18) is also coming. I think it is still quite computation heavy in some lower end device, but it should not stop you using it :p
 
-{% img images/posts/20131030/gmusic-1.jpg %}
-{% img images/posts/20131030/gmusic-2.jpg %}
-{% img images/posts/20131030/gmusic-3.jpg %}
+<img src="{{root_url}}/images/posts/20131030/gmusic-1.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gmusic-2.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gmusic-3.jpg"/>
 
-{% img images/posts/20131030/gmusic-4.jpg %}
-{% img images/posts/20131030/gmusic-5.jpg %}
-{% img images/posts/20131030/gmusic-6.jpg %}
+<img src="{{root_url}}/images/posts/20131030/gmusic-4.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gmusic-5.jpg"/>
+<img src="{{root_url}}/images/posts/20131030/gmusic-6.jpg"/>
 
 ## Keep changing
 

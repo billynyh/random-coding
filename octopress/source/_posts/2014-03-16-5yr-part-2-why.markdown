@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Where Do You See Yourself in 5 Years - Why"
+date: 2014-03-16 22:55:02 +0800
+comments: true
+categories: [thoughts, 5yr]
+---
+
+It may be better in these two years, but back in 2008, people always say Hong Kong is not a good place for tech, especially for web startup. I agree, the whole environment, atmosphere, values put the industry in a big disadvantage. For example, in Hong Kong, you can make better living by doing financial related jobs, and usually have a stabler career path compared to being a programmer. 
+
+There is no one to blame. It is normal that a city puts more focus on some area, and has lower priority on others. Yes, HK government sometimes mention IT is one of their important industry, but do you really think the government has whay it takes to do anything to help local startup on this fast changing world? I am not judging the government policy/work, I just think it is not their business. 
+
+## Why stay in Hong Kong
+
+So, why don't just go? Before I started everything, I had a short internship in Shanghai. As I mentioned in previous post, I was totally not prepared before graduate, so this internship kind of affected how I see the industry and the live of being a developer outside Hong Kong. It was a mixed experience, I did not do well, I can't say I enjoyed it a lot, but I did open my eye and started thinking how should I go from that point.
+
+I also had an interview in US, it was a no again. I believe I would just leave HK if I got the job and things would go in a completely different way, but I am still proud of what happened next. It sounds like I was stuck in Hong Kong with no choice, there is always choices, I could keep applying but why give up Hong Kong without a try? Even the industry was bad here, I need to know how bad is it.
+
+## Why work in startups
+
+From my short internship experience, I learned that if you work in a big team, most likely you will be limited to the tech they already using, it is not a bad thing since you can get deep knowledge in that area, but I was not sure if it was good for me in that time. Touching different latest technologies in development is important to me, it shows how the developers around the world work and keeps you in the trend. You can always try out new stuff in your own time, but as newbie like me, I will need to spend my own time on catching up work. Therefore, working in a (new/small) startup that opens to different technologies would be a best fit to me.
+
+In terms of earnings, working in startup would probably at the bottom of the list amount the jobs required similar skill level. Mathematically you can say you had the possibility of going big in a startup but 0 chance of not doing that. But if this is really the reason of doing startup, you are either very confident in yourself and your team, or you are not go at math... 
+
+There is no doubt that I want the startup I am working in goes big one day, but it is not the only thing I care. Besides the result, I value the progress even higher. What working in startup means to me is, even you are in a small team and do not have many resources compare to big companies, you can still do something big. To do that, you need to optimize the time, tools, resource you have and keep challenge your team to improve.
+
+## What's next
+
+After working in different startups for 5 years, I think I am still learning and improving as an engineer. I believe someday when I am more experienced and my skill reached certain level, I may have a different view of everything. I am looking forward for what will happen on me and the industry in the next 5 years.

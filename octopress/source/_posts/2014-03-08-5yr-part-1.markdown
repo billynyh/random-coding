@@ -3,7 +3,7 @@ layout: post
 title: "Where do you see yourself in 5 years - How I started"
 date: 2014-03-08 22:41:19 +0800
 comments: true
-categories: thoughts
+categories: [thoughts, 5yr]
 ---
 
 ## 5 years ago

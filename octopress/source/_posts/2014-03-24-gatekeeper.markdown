@@ -7,7 +7,7 @@ categories: thoughts
 ---
 
 
-Recently read some articles from Julie Zhuo's, she is a Product design director in Facebook. Although her posts are not about engineering, I still feel connected with most of the topics.
+Recently read some articles from [Julie Zhuo's](https://medium.com/the-year-of-the-looking-glass), she is a Product design director in Facebook. Although her posts are not about engineering, I still feel connected with most of the topics. I wrote some of my thoughts originally, but I think just put the quotes here is enough.
 
 ["Don't be a gatekeeper"](https://medium.com/the-year-of-the-looking-glass/5c48db173662)
  
@@ -15,20 +15,10 @@ Recently read some articles from Julie Zhuo's, she is a Product design director 
 If you are somebody with an incredible amount of passion for high quality, you may be compelled to become a gatekeeper at some point in your life.
 {% endblockquote %}
     
-I read this article last night, this is interesting because I just had a similar "discussion" with my team leads last week about the schedule. We were doing things like other (average) startups do, fast development, no test, keep changing, dirty code everywhere. This worked for a new products, but as the usage increases, the required quality of the app should also increase.
-
-I am not only not happy about the way we work, I also feel that I am losing control of my work. I start feeling I will be no longer able to maintain the app's performance, code quality, and even do a accurate time estimation for new tasks. This is a very serious problem as I considered myself the gatekeeper of the project, even I am not the one to make (any) product decision. 
-
-
 {% blockquote %}
 If you are a gatekeeper or find yourself thinking we need a gatekeeper, the thing that is broken or missing is trust. So instead of judging yes or no, good or bad, consider this instead: what could I do to make it so that I have more trust in the people around me?
 {% endblockquote %}
 
-The result of the discussion was that, I asked for a proper scheduling so that I can at least do my job as a developer, and hope this can change the trust thing a little bit.
-
-## Futher reading
-
-There are more articles from Julie's [medium](https://medium.com/the-year-of-the-looking-glass). 
 
 ["Why Designers Leave"](https://medium.com/the-year-of-the-looking-glass/d0aa3b8af9b7)
 

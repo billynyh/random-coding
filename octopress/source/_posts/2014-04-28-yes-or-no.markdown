@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Yes or No"
+date: 2014-04-28 00:34:33 +0800
+comments: true
+categories: thoughts
+---
+
+
+## From being interviewed to interview others
+
+I have been working as a developer in different startups, I am not a decision maker in any of it, but as I becoming a “senior engineer”, I start getting involved in the hiring process. And this gives me a good view to see even we all called ourselves "startups", different teams can have very different hiring considerations.
+
+
+## Limitation
+
+It is obvious that hiring in startups is very different from Google. You don't have a large pool of candidates for you to choose, you don't have a HR/recruitment team to do that for you, you can't simply fly someone from another country and give him a few rounds interview even you know it is a fit... 
+
+As I mentioned in previous post, Hong Kong is not a good place for tech people, it is normal that the best people leave Hong Kong for better opportunities. Of course there are still many good developers or potential candidates but it is hard for startups to reach those talents. For some companies/industries, they believed in some kind of "hiring season" indicating that the "market" is more active and can have better chance to find match for your openings. I agree on the probability, but in my opinion, it is easier for you to find a match, it is also easier for the candidates and they may turned down your offer after all. 
+
+## Decision
+
+No matter what are you looking for, what questions you asked, at the end of the day, as a interviewer, what your boss/manager want from you are actually just scores, comparison to other candidates and most importantly, YES or NO. 
+
+At first you may feel pressure of saying no because it means the candidate will not get the job, especially you don't have much comparisons at that time. But in my experience, the more you see, the easier you say no, the hard part is to say yes.
+
+## What the YES means
+
+For me, a yes means
+
+1. If the new hires will be working with/under you, you feel comfortable to assign tasks to them and believe they are/will be able to handle it.
+2. You want to work with them.
+
+(1) is the bottom line, no matter how experienced the candidate is, if you think they could have problem picking up the existing code base, it is usually a easy no. And when you are interviewing entry level developers, you may have a lower experience/technical bar but you still need to have a feeling that the candidate is a fast learner to give a yes.
+
+(2) could be tricky, you may think he is qualified for the job on every aspect but you are still not sure about if you want to work with him, could be just impression, the way he talks, his background etc. For big companies, you may just say no if you are not sure, but for small teams, we try not to lose any potentially good candidates. So far I don’t have a good solution for this, most likely I will just tell my manager that I think he is qualified but I am not sure on personality, then let the next interviewer decide that. 
+
+### Conclusion
+
+Interview is not just about a company hiring a candidate, it is also about a candidate deciding to join a company. If you are a big company, you could think that it is the candidates lost to not joining you, but as a startup, things are not working that way, at least in Hong Kong. If you want to attract good people to join you, you need to show that you have what they looking for, or something better than what they are looking for. It's not always about money.
+
+
+
+
+
+
+
+
+

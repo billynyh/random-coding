@@ -1,0 +1,39 @@
+---
+layout: post
+title: "F8 Mobile talks"
+date: 2014-05-12 00:35:47 +0800
+comments: true
+categories: 
+---
+
+Got some days off last few weeks (public holiday and AL), spent quite lots of time on watching tech talks. (Another video summary post...)
+
+### [Hacker Way: Designing the New Messenger](https://www.youtube.com/watch?v=QErcmjPxEtg)
+
+The first one I watched was about designing Facebook messenger, a little bit slow, but talked about some design iterations and considerations through out the process which is quite interesting.
+
+### [Hacker Way: Releasing and Optimizing Mobile Apps for the World](https://www.youtube.com/watch?v=mOyoTUETmSM)
+
+<div class="video-container">
+<iframe src="http://www.youtube.com/embed/mOyoTUETmSM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+This one is really interesting. It talked about their Android app shipping schedule and workflow. The talk also included their buck system, heard this from other talks but this is the first time I heard (maybe I missed before) about the share build result over network, which is quite... crazy amazing. 
+
+### [Hacker Way: Mobile Engineering at Facebook's Scale](https://www.youtube.com/watch?v=TCuVxU07NWs)
+
+<div class="video-container">
+<iframe src="http://www.youtube.com/embed/TCuVxU07NWs" frameborder="0" allowfullscreen></iframe>
+</div>
+Similar contents but also worth watching.
+
+
+### [Dagger: A Fast Dependency Injector for Android and Java](http://www.infoq.com/presentations/Dagger)
+
+I have been researching the possibility of using dependency injection in current project. I think I will use it eventually, especially Facebook and Square are using it for a while. The biggest problem right now is it may affected every part of the app and I am not comfortable doing that without unit tests...
+
+
+I also re-watched these two videos from IO 2013 as I am working on related view performance recently
+
+* [Google I/O 2013 - Android Graphics Performance](https://www.youtube.com/watch?v=vQZFaec9NpA)
+* [Google I/O 2013 - Writing Custom Views for Android](https://www.youtube.com/watch?v=NYtB6mlu7vA)

@@ -17,6 +17,10 @@
     {{h.css_asset_tag(base_url, "global.css")}}
 
     {% block extra_css %}{% endblock %}
+    {{h.js_asset_tag(base_url, "jquery.js")}}
+    {{h.js_asset_tag(base_url, "sticky-title.js")}}
+    {{h.js_asset_tag(base_url, "global.js")}}
+    {% block extra_js %}{% endblock %}
   </head>
 
   <body>
@@ -50,13 +54,6 @@
       
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    {{h.js_asset_tag(base_url, "jquery.js")}}
-    {{h.js_asset_tag(base_url, "bootstrap.js")}}
-    {{h.js_asset_tag(base_url, "sticky-title.js")}}
-    {{h.js_asset_tag(base_url, "global.js")}}
-    {% block extra_js %}{% endblock %}
     <!-- Put this into a custom JavaScript file to make things more organized -->
     <script>
     $("#menu-toggle").click(function(e) {

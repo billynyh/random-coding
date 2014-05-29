@@ -48,6 +48,7 @@ def get_tree(source):
     for root, ds, fs in os.walk(source):
         for name in fs:
             if name[0] == ".": continue
+            print name
             path = os.path.join(root, name)
             f = open(path, "rU")
             title = f.readline()
@@ -102,6 +103,7 @@ def compare_entries(x, y):
     return result
 
 def write_file(url, data):
+    print "write_file " + url
     path = DESTINATION + url
     dirs = os.path.dirname(path)
     if not os.path.isdir(dirs):
@@ -114,20 +116,22 @@ def write_file(url, data):
 def generate_homepage(f, t, e):
     """Generate homepage"""
     template = e.get_template(TEMPLATES['home'])
-    write_file("index.html", template.render(entries=f[:HOME_SHOW], post_tags = t, base_url="."))
+    write_file("index.html", template.render(entries=f[:HOME_SHOW], 
+        post_tags = t, base_url=ABS_PATH))
 
 @step
 def master_archive(f, t, e):
     """Generate master archive list of all entries"""
     template = e.get_template(TEMPLATES['archive'])
-    write_file("archives.html", template.render(entries=f, post_tags = t, base_url="."))
+    write_file("archives.html", template.render(entries=f, 
+        post_tags = t, base_url=ABS_PATH))
 
 @step
 def detail_pages(f, t, e):
     """Generate detail pages of individual posts"""
     template = e.get_template(TEMPLATES['detail'])
     for file in f:
-        write_file(file['url'], template.render(entry=file, post_tags = t, base_url="../../.."))
+        write_file(file['url'], template.render(entry=file, post_tags = t, base_url=ABS_PATH))
 
 def main():
     print "Chiseling..."

@@ -3,31 +3,43 @@
 {% block title %} {{entry.title}}  {% endblock %}
 {% block main %}
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=446579505452993";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <section class="post">
     <div class="sticky">
         {{entry.pretty_date}}
     </div>
     <div class="content">
-    <header class="post-header">
+        <header class="post-header">
 
-        <h2 class="post-title">
-            {{ entry.title }}
-        </h2>
+            <h2 class="post-title">
+                {{ entry.title }}
+            </h2>
 
-        <p class="post-meta">
-            By <a href="#" class="post-author">{{entry.author}}</a> 
-            under 
-            {% for tag in entry.tags %}
-            <a class="post-category post-category-{{tag}}" href="#">{{tag}}</a> 
-            {% endfor %}
-        </p>
-    </header>
+            <p class="post-meta">
+                By <a href="#" class="post-author">{{entry.author}}</a> 
+                under 
+                {% for tag in entry.tags %}
+                <a class="post-category post-category-{{tag}}" href="#">{{tag}}</a> 
+                {% endfor %}
+            </p>
+        </header>
 
-    <div class="post-description">
-        {{ entry.content }}
+        <div class="post-description">
+            {{ entry.content }}
+        </div>
+    
+        <div class="fb-comments" data-href="{{base_url + "/" + entry.url}}" data-numposts="5" ></div>
+    
     </div>
 
-
-    </div>
 </section>
+
 {% endblock %}

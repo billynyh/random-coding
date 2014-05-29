@@ -46,6 +46,21 @@ a:focus {
     color: #efefef;
 }
 
+.brand-title a {
+    color: #ffffff;
+}
+
+.sidebar .social a {
+    color: #ffffff;
+    font-size:36px;
+    padding:4px;
+}
+.sidebar .social a:hover {
+    color: #eaeaea;
+}
+
+
+
 .nav-list {
     margin: 0;
     padding: 0;
@@ -142,6 +157,13 @@ a:focus {
     margin-left: 1em;
     color: #fff;
     text-shadow: 0 1px 1px #333;
+}
+
+.post blockquote {
+    background:#eaeaea;
+    font-style: italic;
+    margin:0;
+    padding: 0 20px;
 }
 
 .footer {

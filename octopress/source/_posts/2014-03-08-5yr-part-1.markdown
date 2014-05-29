@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Where do you see yourself in 5 years - How I started"
+date: 2014-03-08 22:41:19 +0800
+comments: true
+categories: [thoughts, 5yr]
+---
+
+## 5 years ago
+
+**Where do you see yourself in 5 years**. This was the very first question I got asked in an interview after graduated from university in 2008. I started as a web developer, also touched a little bit iOS. Then I decided to focus on Android and now I am a pure Android developer, nothing close to an expert, but I know what I can do and I am confident in my work. 
+
+Of course I did not picture me being Android developer 5 years ago, but other than that, I did foresee myself focused on one area instead of touching everything. Not saying that I am now Android only, but if there is one thing I have better knowledge compare to others in my team, it would be Android.
+
+<div style="background:#ccc; padding:20px">
+<p style="text-align:center">
+<img src="{{root_url}}/images/posts/20140308/five-years.png"/></p>
+<p style="text-align:right"><a href="http://xkcd.com/1088/">Source: xkcd</a></p>
+</div>
+
+
+Back in 2008, I enjoyed my 3 years programming competition life and knew absolutely nothing about the real world. I wanted to be a software engineer but had no idea what its like before I graduated (I am not saying it is a bad thing, having work experience before graduate means very little to me, but you may feel a little bit lost at the beginning). I even didn't prepare for that interview, or you can say, that interview was my preparation of the next interview.
+
+My first reaction on that 5yr question was like, I know nothing about your company, most likely I will not be there 5 years later, what should I say? Is it a trick question? As expected, I did not get the job but this question stays in my head through out the years.
+
+After some friends' referral and meeting different people, I joined a new, small and passionate "startup + software house" team and started my developer life. I started as a web developer, learning all kind of web tech through client projects, first did some Wordpress theme, then some rails, python and mongodb. Doing projects with different languages and frameworks gave me a chance to play with latest tech outside and most importantly, pushed my learning skill. 
+
+##Android
+
+Around that time, iPhone was in a very good trend and we started to have some iOS projects. Even I participated in some, I was not a big fan of smart phone as I was already with my computer all day. 
+
+In 2010, I got my first smart phone, Google Nexus One, it did not magically changed how I see smart phone in a short time. I actually was still not so convinced by the idea of smart phone in the first few months. What happened was that, one day we decided to play with the Android sdk and build something we want (and simple). This was mainly for fun, and also to let us had a taste of Android development so we might take some Android project in the future.
+
+We decided to make a camera app as side project, because we did see some good camera apps on iOS but those on Android were not compareable to them. Turned out it is nothing close to simple, or I should say, it was one of the hardest thing you can do within the computing power at that time. We spent one week to have our first prototype, everything was ugly, but we just put it on Android market right away. We did not know what to expect, but we were happy to see people actually enjoyed our app. Then I started maintaining the app in my own time and took that chance to catch up with the latest Android development. We learned a lot from building that app, it is a long story so I will not include it here.
+
+## Leaving the comfort zone
+
+I stayed in my first company for 3 years. Although we did not go big or have any crazy viral product, we survived, which I think already is an achievement in Hong Kong. I enjoy being a (big) part of the team but I started thinking that 5 years question. I could basically see how I would be if nothing changed and I was not sure if it is what I want. There were other considerations but in short, I decided to leave my comfort zone. I quited my job in early 2012, took a little break and threw myself back to the market. 
+
+This time, I started as an Android developer.
+

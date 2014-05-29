@@ -3,7 +3,7 @@ layout: post
 title: "F8 Mobile talks"
 date: 2014-05-12 00:35:47 +0800
 comments: true
-categories: 
+categories: [android, facebook]
 ---
 
 Got some days off last few weeks (public holiday and AL), spent quite lots of time on watching tech talks. (Another video summary post...)

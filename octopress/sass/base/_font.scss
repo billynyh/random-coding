@@ -15,3 +15,25 @@ $font-icon-path: "/font/fontawesome-webfont";
 	font-weight: normal;
 	font-style: normal;
 }
+
+.fa-android:before {
+    content: "\f17b";
+    font-family:'FontAwesome';
+    padding-left:10px;
+	font-weight: normal;
+	font-style: normal;
+}
+.fa-code:before {
+    content: "\f121";
+    font-family:'FontAwesome';
+    padding-left:10px;
+	font-weight: normal;
+	font-style: normal;
+}
+.fa-database:before {
+    content: "\f1c0";
+    font-family:'FontAwesome';
+    padding-left:10px;
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<article class="page">
+<style>
+.about-container {
+    position:relative;
+}
+.about-col-left {
+    float:left;
+    width:265px;
+    top:0;
+    left:0;
+    margin-bottom:16px;
+}
+.about-col-left .profilepic {
+    width:260px;
+}
+.about-col-right {
+    margin-left:276px;
+}
+.about-col-left a..fancybox {
+    display:inline-block;
+}
+.about-col-left .fancybox img {
+    width: 128px;
+    margin-right:2px;
+    margin-top:2px;
+}
+
+@media screen and (max-width: 800px) {
+    .about-col-right {
+        margin-left:0px;
+    }
+    .about-col-left {
+        position:static;
+        float:none;
+        width:auto;
+        margin-top:10px;
+    }
+    .about-col-left .profilepic {
+        width:128px;
+        margin-right:2px;
+        margin-top:2px;
+    }
+}
+
+</style>
+<div class="about-container">
+    <div class="about-col-left">
+        <img src="{{root_url}}/images/profile3_260.jpg" class="profilepic" />
+        <a rel="gallery1" href="{{root_url}}/images/gallery/9gag_01.jpg" title="9GAG Team" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/9gag_01.jpg" /></a>
+        <a rel="gallery1" href="{{root_url}}/images/gallery/wf2008.jpg" title="ACM ICPC World Final 2008" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/wf2008.jpg" /></a>
+        <a rel="gallery1" href="{{root_url}}/images/gallery/travel_nz_03.jpg" title="Trip to NZ - seal in Kaikoura" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/travel_nz_03.jpg" /></a>
+        <a rel="gallery1" href="{{root_url}}/images/gallery/nepal_01.jpg" title="Trip to Nepal" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/nepal_01.jpg" /></a>
+        
+        <a rel="gallery1" href="{{root_url}}/images/gallery/korea_01.jpg" title="Trip to Korea" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/korea_01.jpg" /></a>
+        <a rel="gallery1" href="{{root_url}}/images/gallery/hiking_02.jpg" title="Hiking in Hong Kong" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/hiking_02.jpg" /></a>
+        <!--
+        <a rel="gallery1" href="{{root_url}}/images/gallery/.jpg" title="" class="fancybox"><img src="{{root_url}}/images/gallery/thumb/.jpg" /></a>
+        -->
+    </div>
+
+    <div class="about-col-right">
+    {% if page.title %}
+    <h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% endif %}
+    <div class="entry-content">{{ content }}</div>
+    </div>
+
+    <div style="clear:both"></div>
+</div>
+
+</article>
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}

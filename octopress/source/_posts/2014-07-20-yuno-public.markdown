@@ -6,8 +6,7 @@ comments: true
 categories: [android]
 ---
 
-
-Last time talked about SwipeRefreshLayout in support v4, finally got chance to use it in work. The integration is very simple and does not change the structure of ListView like [Android-PullToRefresh](https://github.com/chrisbanes/android-pulltorefresh) (no offensive, I have been using the library for a year and still love it). 
+Recently started a new project in work so I finally have a chance to use SwipeRefreshLayout in work. The integration is very simple and does not change the structure of ListView like [Android-PullToRefresh](https://github.com/chrisbanes/android-pulltorefresh) (I still love that library).
 
 I also like the progress bar embeded in the view very much, and would like to use it in other components to make my apps's UI consistent. A quick look to the [source code](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/master/v4/java/android/support/v4/widget/SwipeRefreshLayout.java) and found that it is implemented in the class [SwipeProgressBar](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/master/v4/java/android/support/v4/widget/SwipeProgressBar.java). It is sad that the class is not public and it seems there is no similar class in the framework and support library. 
 

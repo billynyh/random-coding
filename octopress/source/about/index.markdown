@@ -13,7 +13,7 @@ Working on projects that have millions of people using it everyday pushes me wri
 
 I stared Android development in 2011, developed a popular Android camera app [Action Snap](https://play.google.com/store/apps/details?id=oursky.gesturecam) which got over 2M downloads. Before fully switched to Android, I had a few years of web development experience using Python, Ruby on Rails and PHP.
 
-I was active in programming contest and competed ACM ICPC World final 2008 in Banff, Canada, representing The Chinese University of Hong Kong.
+I was active in programming contest and competed in ACM ICPC World final 2008 in Banff, Canada, representing The Chinese University of Hong Kong.
 
 Outside my programmer life, I love travelling, hiking, camping, playing badminton, football(soccer) and weiqi(Go). 
 

@@ -6,11 +6,11 @@ comments: true
 categories: [android]
 ---
 
-Recently started a new project in work so I finally have a chance to use SwipeRefreshLayout in work. The integration is very simple and does not change the structure of ListView like [Android-PullToRefresh](https://github.com/chrisbanes/android-pulltorefresh) (I still love that library).
+Recently started a new project in work so I finally have a chance to use SwipeRefreshLayout. The integration is very simple and does not change the structure of ListView like [Android-PullToRefresh](https://github.com/chrisbanes/android-pulltorefresh) (I still love that library), so it should be easier to perform custom logic on the ListView afterwards.
 
 I also like the progress bar embeded in the view very much, and would like to use it in other components to make my apps's UI consistent. A quick look to the [source code](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/master/v4/java/android/support/v4/widget/SwipeRefreshLayout.java) and found that it is implemented in the class [SwipeProgressBar](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/master/v4/java/android/support/v4/widget/SwipeProgressBar.java). It is sad that the class is not public and it seems there is no similar class in the framework and support library. 
 
-So, I just copy the code of SwipeProgressBar and BakedBezierInterpolator myself and put it in my common lib, then use it in my app.
+So, I just copy the code of SwipeProgressBar and BakedBezierInterpolator(required by SwipeProgressBar and also not public) myself and put it in my common lib, then use it in my app.
 
 I understand that there are some kind of design principle of the class/methods visibility, but sometime it is quite frustrating that after going through the framework source code and found that you cannot to extend the class because some properties are private and does not have a public/protected getter.
 

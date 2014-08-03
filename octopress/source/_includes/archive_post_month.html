@@ -1,0 +1,28 @@
+{% capture date %}{{ post.date }}{% endcapture %}
+{% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
+{% capture this_month %}{{ date | date: "%m" }}{% endcapture %}
+{% unless year == this_year and month == this_month %}
+	{% unless forloop.first %}
+		</section>
+	{% endunless %}
+    {% if year == this_year %}
+	    <section class="archives"><h1 class="year">{{ date | date: "%b" }}</h1>
+    {% else %}
+	    <section class="archives"><h1 class="year">{{ date | date: "%Y %b" }}</h1>
+    {% endif %}
+	{% assign year = this_year %}
+	{% assign month = this_month %}
+{% endunless %}
+<article>
+	<h2 class="title"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h2>
+	<div class="meta">
+		<div class="date">{{ date | date: "%b %e" }}</div>
+		<div class="tags">{% include post/categories.html %}</div>
+	    {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
+	    <div class="comments"><a href="{{ root_url }}{{ post.url }}#disqus_thread">Comments</a></div>
+	    {% endif %}
+	</div>
+</article>
+	{% if forloop.last %}
+	</section>
+	{% endif %}

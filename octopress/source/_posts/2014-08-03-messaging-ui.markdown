@@ -3,7 +3,7 @@ layout: post
 title: "Quick look of messaging app UI"
 date: 2014-08-03 12:13:04 +0800
 comments: true
-categories: 
+categories: [android, ui, messaging, chat]
 ---
 
 

@@ -19,6 +19,6 @@ I also developed some code generators to convert config file to java code for mu
 
 ### Links
 
-* http://9gag.com/
+* [http://9gag.com](http://9gag.com/)
 * [Play store](https://play.google.com/store/apps/details?id=com.ninegag.android.app)
 

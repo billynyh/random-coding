@@ -12,7 +12,7 @@ I joined the team right before their first public release, responsible for ident
 
 ### Links
 
-* http://wemailapp.com/
+* [http://wemailapp.com/](http://wemailapp.com)
 * [Play store](https://play.google.com/store/apps/details?id=com.wemail)
 * [Techcrunch](http://techcrunch.com/2014/11/18/wemail-raises-1m-from-twitch-reddit-founders-for-intelligently-designed-mobile-e-mail/)
 * [Mashable](http://mashable.com/2014/11/18/wemail/)

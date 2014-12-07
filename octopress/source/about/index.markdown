@@ -7,7 +7,7 @@ sharing: false
 footer: false
 ---
 
-My name is Billy Ng, I am a software engineer living in Hong Kong. I am currently Android developer of [9GAG](http://9gag.com), responsible for providing native Android experience to our large user base. The app got <b>over 5M downloads</b> and was featured on Google Play store.
+My name is Billy Ng, I am a software engineer living in Hong Kong. I am currently Android developer of [WeMail](http://wemailapp.com/), responsible for code architecture, performance tuning and improving team's development process. Before joining WeMail, I was with the [9GAG](http://9gag.com) team for about two years, I built their first official Android app to provide native experience to their large user base. The app got <b>over 5M downloads</b> and was featured on Google Play store.
 
 Working on projects that have millions of people using it everyday pushes me write better software. I am passionate about Android UI performance, app architecture, building reusable components and customizing tools to improve the team's development process. I have experience on building apps from start to launch on my own, while I also enjoy working in team to build bigger things.
 
@@ -19,6 +19,10 @@ Outside my programmer life, I love travelling, hiking, camping, playing badminto
 
 # Projects highlight
 
+* [WeMail](https://play.google.com/store/apps/details?id=com.wemail)
+  * Group email by senders
+  * Extends email usage with chat like features
+  * Support multiple providers including Gmail, Yahoo, Outlook and AOL.
 * [9GAG Android](https://play.google.com/store/apps/details?id=com.ninegag.android.app)
   * 9GAG official Android app.
   * 5M+ downloads and featured on Google Play store.

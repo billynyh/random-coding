@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<article class="page">
+<style>
+.app-container {
+    position:relative;
+    margin-bottom:40px;
+}
+.app-col-left {
+    float:left;
+    width:255px;
+    top:0;
+    left:0;
+    margin-bottom:16px;
+    margin-top:10px;
+}
+.app-col-right {
+    margin-left:276px;
+}
+
+@media screen and (max-width: 800px) {
+    .app-col-right {
+        margin-left:0px;
+    }
+    .app-col-left {
+        position:static;
+        float:none;
+        width:auto;
+        margin-top:10px;
+    }
+    .app-col-left .projects-img {
+        max-height: 300px;
+    
+    }
+}
+
+.projects-img {
+}
+
+</style>
+{% if page.title %}
+<h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+{% endif %}
+<div class="entry-content">
+<div>{{ content }}</div>
+
+<div class="app-container">
+    <div class="app-col-left">
+        <img src="{{root_url}}/images/projects/wemail.png" class="projects-img" />
+    </div>
+
+    <div class="app-col-right"> {% markdown app-contents/wemail.markdown %} </div>
+    <div style="clear:both"></div>
+</div>
+
+<div class="app-container">
+    <div class="app-col-left">
+        <img src="{{root_url}}/images/projects/9gag.png" class="projects-img" />
+    </div>
+
+    <div class="app-col-right"> {% markdown app-contents/9gag.markdown %} </div>
+    <div style="clear:both"></div>
+</div>
+
+<div class="app-container">
+    <div class="app-col-left">
+        <img src="{{root_url}}/images/projects/actionsnap.jpg" class="projects-img" />
+    </div>
+
+    <div class="app-col-right"> {% markdown app-contents/actionsnap.markdown %} </div>
+    <div style="clear:both"></div>
+</div>
+</div> <!-- end entry-content -->
+</article>
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}

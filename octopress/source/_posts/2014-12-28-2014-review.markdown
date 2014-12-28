@@ -1,0 +1,41 @@
+---
+layout: post
+title: "2014 Review"
+date: 2014-12-28 17:02:00 +0800
+comments: true
+categories: [thoughts]
+---
+
+
+Not sure what is the best word to describe this year, it was kind of negative, but I grew when getting through this.
+
+## Personal Goal
+
+Well let's start with something positive. I set a few goals when the year start, and some of them are reached.
+
+* 5M downloads, this was the goal in 2013, delayed a little bit, still happy to make it.
+* Lose some weight. Although it came back -\_- I did lose some.
+* This blog. At first I wrote weekly but then starts run out of topics (and time) and became one post per month. Writing helps me organize my thought and keeps me thinking.
+
+## Disappointment
+
+I take my work very seriously, it kills me to watch the team wasting time week over week. I spent quite a lot of time to think if it is my problem or not, I tried to give them benefit of the doubt as I was not involved in most decision, I tried not to blame people on not good at their job because we are a team. However, as I think deeper, I always came to the darker conclusions. 
+
+{% blockquote %}
+Are we really a team?
+{% endblockquote %}
+
+<div class="video-container">
+<iframe src="http://www.youtube.com/embed/zE7PKRjrid4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+## Moving on
+
+Making the decision is easy, the hard part is to handle it right. Turned out I was thinking too much, this year could be a bit different if I just trust my guts, but I learned a lot in the process. I would not say it is a waste of time, even though we did spend time for nothing for months. The more time you lost, the more you willing to make it right, and that's the power to moving on.
+
+Your life is like a start up when you work in one, you move fast, you take risks. 2013 was a new start, 2014 was a process, 2015 is a whole new start.
+
+<div class="video-container">
+<iframe src="http://www.youtube.com/embed/jEiTaIAj8bQ" frameborder="0" allowfullscreen></iframe>
+</div>

@@ -37,3 +37,10 @@ $font-icon-path: "/font/fontawesome-webfont";
 	font-weight: normal;
 	font-style: normal;
 }
+.fa-list:before {
+    content: "\f03a";
+    font-family:'FontAwesome';
+    padding-left:10px;
+	font-weight: normal;
+	font-style: normal;
+}

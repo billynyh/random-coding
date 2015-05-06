@@ -1,0 +1,38 @@
+---
+layout: playlist
+title: "2015 F8"
+tags: ["facebook", "f8", "performance"]
+comments: true
+playlistId: 2015-f8
+cover: "https://i.ytimg.com/vi/X6YbAKiLCLU/hqdefault.jpg"
+videos:
+- title: "F8 2015 - Evolving Facebook for Android: Engineering for an Ever-Changing Mobile World"
+  youtubeId: 5yFVYHXNBqM
+  url: https://www.youtube.com/watch?v=5yFVYHXNBqM
+  channel: "Facebook Developers"
+  thumbNormal: "https://i.ytimg.com/vi/5yFVYHXNBqM/hqdefault.jpg"
+  thumbLarge: "https://i.ytimg.com/vi/5yFVYHXNBqM/sddefault.jpg"
+
+- title: "F8 2015 - Facebook on iOS: Inside the \"Big Blue App\""
+  youtubeId: -G8nZpif1rA
+  url: https://www.youtube.com/watch?v=-G8nZpif1rA
+  channel: "Facebook Developers"
+  thumbNormal: "https://i.ytimg.com/vi/-G8nZpif1rA/hqdefault.jpg"
+  thumbLarge: "https://i.ytimg.com/vi/-G8nZpif1rA/sddefault.jpg"
+
+- title: "F8 2015 - Move Fast: Ensuring Mobile Performance Without Breaking Things"
+  youtubeId: htGxYO155rQ
+  url: https://www.youtube.com/watch?v=htGxYO155rQ
+  channel: "Facebook Developers"
+  thumbNormal: "https://i.ytimg.com/vi/htGxYO155rQ/hqdefault.jpg"
+  thumbLarge: "https://i.ytimg.com/vi/htGxYO155rQ/sddefault.jpg"
+
+- title: "F8 2015 - React Native & Relay: Bringing Modern Web Techniques to Mobile"
+  youtubeId: X6YbAKiLCLU
+  url: https://www.youtube.com/watch?v=X6YbAKiLCLU
+  channel: "Facebook Developers"
+  thumbNormal: "https://i.ytimg.com/vi/X6YbAKiLCLU/hqdefault.jpg"
+  thumbLarge: "https://i.ytimg.com/vi/X6YbAKiLCLU/sddefault.jpg"
+
+---
+

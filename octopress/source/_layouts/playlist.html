@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<style>
+.playlist-container {
+
+}
+.playlist-item {
+    width:450px;
+    height:270px;
+    display:block;
+    background-position:center;
+    float:left;
+    margin-right:50px;
+    margin-bottom:35px;
+    border-radius:5px;
+
+    position:relative;
+}
+
+.playlist-item p.title {
+    display:block;
+    color:#fff;
+    font-size:18px;
+    line-height:26px;
+    background-color:rgba(30, 30, 30, 0.7);
+    padding:16px;
+
+
+    position:absolute;
+    bottom:0;
+}
+
+
+</style>
+
+<article class="post-playlist">
+
+    {% if page.title %}
+    <h2 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h2>
+    {% endif %}
+
+
+    <div class="entry-content">
+    {{ content }}
+    </div>
+
+    <div class="playlist-container clearfix">
+    {% for v in page.videos %}
+        <a class="playlist-item" style="background-image:url({{ v.thumbNormal }})" href="{{v.url}}">
+            <p class="title">{{v.title}}</p>
+        </a>
+    {% endfor %}
+    </div>
+
+</article>
+
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
+
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}

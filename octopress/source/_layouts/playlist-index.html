@@ -1,0 +1,107 @@
+---
+layout: default
+---
+<style>
+.playlist-index h1.title {
+    margin-bottom:30px;
+}
+
+.playlist-block {
+    background:#ffffff;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:40px;
+}
+.playlist-block .cover {
+    display:block;
+    float:left;
+    width:340px;
+    height:220px;
+    background:#222222;
+    overflow:hidden;
+}
+.playlist-block .cover img {
+    width:100%; /* height around 255px */
+    margin-top: -16px;
+}
+
+.playlist-block .info {
+    margin-left: 340px;
+    padding:6px 20px 0 20px;
+}
+.playlist-block .tags {
+    text-transform:uppercase;
+}
+.playlist-block h2 a {
+    font-size:50px;
+    line-height:80px;
+    color:#444;
+    font-weight:normal;
+    font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.playlist-block .meta {
+
+}
+
+</style>
+
+<article class="page playlist-index">
+
+    {% if page.title %}
+    <h1 class="title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% endif %}
+
+
+    <div class="entry-content">
+    {{ content }}
+    </div>
+
+    <div class="playlist-container">
+    {% for key in page.talks %}
+      {% for item in site.pages %}
+      {% if item.playlistId == key %}
+    <div class="playlist-block clearfix">
+        <div class="cover">
+            <a href="{{item.url}}"><img src="{{item.cover}}" /></a>
+        </div>
+        <div class="info">
+            <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+            <p class="meta">
+                <span class="count">{{item.videos.size}} Videos</span> |
+                <span class="tags"> {% for tag in item.tags %} {{tag}} {% if !forloop.first %} / {% endif %} {% endfor %}</span>
+            </p>
+
+        </div>
+    </div>
+      {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    </div>
+
+</article>
+
+{% unless page.sharing == false %}
+	{% include post/sharing.html %}
+{% endunless %}
+
+{% if site.disqus_short_name and page.comments == true %}
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+</section>
+{% endif %}
+
+<script>
+$(document).ready(function(){
+    $(".playlist-block .cover ximg").each(function() {
+        // verticle align center
+        var ele = $(this);
+        var h = ele.height();
+        var ph = $(ele.closest(".cover")).height();
+        var offset = (h - ph)/2;
+        console.log(h+" " + ph + ": " +offset);
+        ele.css("margin-top", (-offset)+"px");
+    });
+});
+</script>

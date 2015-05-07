@@ -44,31 +44,66 @@
 
 /* palylist */
 
-.playlist-container {
-
-}
 .playlist-item {
-    width:450px;
-    height:270px;
     display:block;
     background-position:center;
     float:left;
-    margin-right:50px;
-    margin-bottom:35px;
     border-radius:5px;
 
     position:relative;
-}
+    overflow:hidden;
 
+    img {
+        display:block;
+        width:100%;
+    }
+}
 .playlist-item p.title {
     display:block;
     color:#fff;
-    font-size:18px;
-    line-height:26px;
     background-color:rgba(30, 30, 30, 0.7);
-    padding:16px;
-
-
     position:absolute;
+    width:100%;
     bottom:0;
 }
+
+.playlist-container {
+    .playlist-item {
+        width:450px;
+        height:240px;
+        margin-right:50px;
+        margin-bottom:35px;
+
+        p.title {
+            font-size:18px;
+            line-height:26px;
+            padding:16px;
+        }
+
+        img {
+            margin-top:-45px;
+        }
+    }
+}
+
+.playlist-container-3 {
+    .playlist-item {
+        width:300px;
+        height:160px;
+        margin-right:25px;
+        margin-bottom:25px;
+
+        p.title {
+            font-size:14px;
+            line-height:20px;
+            padding:6px;
+        }
+        img {
+            margin-top:-30px;
+        }
+    }
+}
+
+
+
+

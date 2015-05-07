@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<style>
-
-
-</style>
+{% if page.itemContainerCls %}
+{% assign itemContainerCls = page.itemContainerCls %}
+{% else %}
+{% assign itemContainerCls = "playlist-container" %}
+{% endif %}
 
 <article class="post-playlist">
 
@@ -18,9 +19,10 @@ layout: default
     {{ content }}
     </div>
 
-    <div class="playlist-container clearfix">
+    <div class="{{ itemContainerCls }} clearfix">
     {% for v in page.videos %}
-        <a class="playlist-item" style="background-image:url({{ v.thumbNormal }})" href="{{v.url}}">
+        <a class="playlist-item" href="{{v.url}}">
+            <img src="{{ v.thumbNormal }}" />
             <p class="title">{{v.title}}</p>
         </a>
     {% endfor %}

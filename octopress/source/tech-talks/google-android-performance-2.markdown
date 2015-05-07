@@ -5,6 +5,7 @@ tags: [Google]
 comments: true
 playlistId: google-android-performance-2
 cover: "https://i.ytimg.com/vi/fEEulSk1kNY/hqdefault.jpg"
+itemContainerCls: "playlist-container-3"
 videos:
 - title: "Battery Drain and Networking (Android Performance Patterns Season 2 ep1)"
   youtubeId: fEEulSk1kNY

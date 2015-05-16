@@ -13,28 +13,31 @@ layout: default
     {{ content }}
     </div>
 
-    <div class="playlist-container">
-    {% for key in page.talks %}
-      {% for item in site.pages %}
-      {% if item.playlistId == key %}
-    <div class="playlist-block clearfix">
-        <div class="cover">
-            <a href="{{item.url}}"><img src="{{item.cover}}" /></a>
+    {% for section in page.sections %}
+        <h2>{{section.title}}</h2>
+        <div class="playlist-container">
+        {% for key in section.items %}
+          {% for item in site.pages %}
+          {% if item.playlistId == key %}
+        <div class="playlist-block clearfix">
+            <div class="cover">
+                <a href="{{item.url}}"><img src="{{item.cover}}" /></a>
+            </div>
+            <div class="info">
+                <h2><a href="{{item.url}}">{{item.title}}</a></h2>
+                <p class="meta">
+                    <span class="count">{{item.videos.size}} Videos</span> |
+                    <span class="tags"> {% for tag in item.tags %} {% if forloop.first != true %} / {% endif %} {{tag}} {% endfor %}</span>
+                </p>
+
+            </div>
         </div>
-        <div class="info">
-            <h2><a href="{{item.url}}">{{item.title}}</a></h2>
-            <p class="meta">
-                <span class="count">{{item.videos.size}} Videos</span> |
-                <span class="tags"> {% for tag in item.tags %} {% if forloop.first != true %} / {% endif %} {{tag}} {% endfor %}</span>
-            </p>
+          {% endif %}
+          {% endfor %}
+        {% endfor %}
 
         </div>
-    </div>
-      {% endif %}
-      {% endfor %}
     {% endfor %}
-
-    </div>
 
 </article>
 

@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Connect 163.com with Javamail"
+date: 2015-05-16 17:09:41 +0800
+comments: true
+categories: [android, imap]
+---
+
+
+Last week I was working on supporting more IMAP email service provider in our app. 163.com is a popular email service used in China, so we created a test account to play around with it.
+
+We already have code working on various email service like yahoo and outlook, so I expect it should not be any problem to connect 163.com, maybe a few custom handling on simplified Chinese.
+
+However, when I try to make connection to IMAP server, I got
+
+    NO SELECT The login is not safe! Please update your mail client: http://mail.163.com/dashi
+
+and the link provided goes to the download page of 163's official app. 
+
+It would be sad if 163 somehow limited the IMAP usage to certain apps but let's not jump to conclusion so fast. After some research, we found that Gmail android app can actually login to 163 account, and that's the only one we found so far. Googled around and see others met similar problem and found one interesting (and wtf) workaround.
+
+https://github.com/dinhviethoa/libetpan/pull/190
+https://github.com/dinhviethoa/libetpan/commit/050f15f30ce40c02d4cf0a9389baca77dec19230
+
+<img src="{{root_url}}/images/posts/20150516/imap-163.jpg" width="600px" />
+   
+So what does that workaround do? IMAP command is usually in the format
+
+    1 CAPABILITY 
+    2 LOGIN USERNAME PASSWORD 
+    3 CAPABILITY 
+    4 LIST "" "" 
+    5 ID NIL 
+    6 SELECT INBOX  
+
+but 163 required a "C" before each command, eg
+
+    C1 CAPABILITY
+       
+so the fix is... add "C". 
+
+To apply to Javamail, we need to modify the Protocol object's writeCommand method and use a "C" prefix for 163 (also 126.com, yeah.net) imap host address.
